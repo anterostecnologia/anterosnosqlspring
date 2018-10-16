@@ -1,0 +1,12 @@
+br/com/anteros/nosql/spring/config/NoSQLDataSourceConfiguration.class
+br/com/anteros/nosql/spring/transaction/AnterosNoSQLTransactionManager$NoSQLTransactionObject.class
+br/com/anteros/nosql/spring/config/NoSQLSessionFactoryConfiguration.class
+br/com/anteros/nosql/spring/transaction/NoSQLSessionFactoryUtils$NoSQLSessionSynchronization.class
+br/com/anteros/nosql/spring/transaction/SessionSynchronization.class
+br/com/anteros/nosql/spring/transaction/SpringNoSQLSessionContext.class
+br/com/anteros/nosql/spring/transaction/AnterosNoSQLSessionHolder.class
+br/com/anteros/nosql/spring/transaction/AnterosNoSQLTransactionManager.class
+br/com/anteros/nosql/spring/transaction/NoSQLSessionFactoryUtils.class
+br/com/anteros/nosql/spring/transaction/SpringNoSQLConfiguration.class
+br/com/anteros/nosql/spring/transaction/SpringNoSQLSessionFactoryImpl.class
+br/com/anteros/nosql/spring/config/AbstractSpringNoSQLPersistenceConfiguration.class
