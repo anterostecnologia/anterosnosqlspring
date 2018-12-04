@@ -1,7 +1,6 @@
 
 package br.com.anteros.nosql.spring.transaction;
 
-
 import org.springframework.transaction.support.ResourceHolderSynchronization;
 import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
@@ -13,7 +12,7 @@ import br.com.anteros.nosql.persistence.session.NoSQLSession;
 import br.com.anteros.nosql.persistence.session.NoSQLSessionFactory;
 
 public class NoSQLSessionFactoryUtils {
-	
+
 	private static Logger LOG = LoggerProvider.getInstance().getLogger(NoSQLSessionFactoryUtils.class);
 
 	public static NoSQLSession getSession(NoSQLSessionFactory sessionFactory) {
@@ -47,8 +46,12 @@ public class NoSQLSessionFactoryUtils {
 		}
 
 		if (SessionSynchronization.ON_ACTUAL_TRANSACTION.equals(sessionSynchronization)) {
-			return null;
+			sessionHolder = new AnterosNoSQLSessionHolder(sessionFactory.openSession());
+			TransactionSynchronizationManager.bindResource(sessionFactory, sessionHolder);
+			return sessionHolder.getSession();
 		}
+
+		sessionHolder = new AnterosNoSQLSessionHolder(sessionFactory.openSession());
 
 		sessionHolder.getSession().getTransaction().begin();
 

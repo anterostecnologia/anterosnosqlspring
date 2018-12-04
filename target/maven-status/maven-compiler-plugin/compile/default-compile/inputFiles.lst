@@ -2,6 +2,7 @@
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/transaction/SpringNoSQLConfiguration.java
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/config/NoSQLDataSourceConfiguration.java
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/transaction/NoSQLSessionFactoryUtils.java
+/Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/config/AbstractSpringSecurityNoSQLPersistenceConfiguration.java
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/transaction/AnterosNoSQLTransactionManager.java
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/config/NoSQLSessionFactoryConfiguration.java
 /Volumes/dadosmac/projetos/workspace_versatil/Anteros-NoSql-Spring/src/main/java/br/com/anteros/nosql/spring/transaction/SessionSynchronization.java
