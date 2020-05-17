@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.anteros</groupId>
 	<artifactId>Anteros-NoSql-Spring</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 
 
 	<properties>
@@ -83,6 +83,28 @@
 			<version>5.0.7.RELEASE</version>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>oss-snapshots-repo</id>
+			<name>Sonatype OSS Maven Repository</name>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>local-REPO</id>
+			<url>http://vps4657.publiccloud.com.br:8082/artifactory/libs-release/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<profiles>
 		<profile>
@@ -360,6 +382,12 @@
 					</plugins>
 				</pluginManagement>
 			</build>
+			<distributionManagement>
+				<repository>
+					<id>local-REPO</id>
+					<url>http://vps4657.publiccloud.com.br:8082/artifactory/libs-release-local</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 </project>
