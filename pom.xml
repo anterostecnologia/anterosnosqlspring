@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.anteros</groupId>
 	<artifactId>Anteros-NoSql-Spring</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 
 
 	<properties>
@@ -58,12 +58,12 @@
 		<dependency>
 			<groupId>br.com.anteros</groupId>
 			<artifactId>Anteros-Core</artifactId>
-			<version>[1.0.0,)</version>
+			<version>[1.2.6,)</version>
 		</dependency>
 		<dependency>
 			<groupId>br.com.anteros</groupId>
 			<artifactId>Anteros-NoSql-Persistence</artifactId>
-			<version>[1.0.0,)</version>
+			<version>[1.0.7,)</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -361,12 +361,7 @@
 					</plugins>
 				</pluginManagement>
 			</build>
-			<distributionManagement>
-				<repository>
-					<id>local-REPO</id>
-					<url>http://vps4657.publiccloud.com.br:8082/artifactory/libs-release-local</url>
-				</repository>
-			</distributionManagement>
+			
 		</profile>
 	</profiles>
 </project>
